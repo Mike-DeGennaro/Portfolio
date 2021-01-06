@@ -1,0 +1,220 @@
+.contact {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+form {
+  width: 55%;
+  border-right: 2px solid rgba(255, 255, 255, 0.56);
+}
+
+.success-msg {
+  color: aqua;
+  padding: 10px 15px;
+  position: relative;
+  left: 180px;
+  width: 120px;
+}
+.fail-msg {
+  color: red;
+  padding: 10px 15px;
+  position: relative;
+  left: 180px;
+  width: 140px;
+}
+.user-input-wrp {
+  position: relative;
+  width: 50%;
+}
+
+.input {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  background-color: #330000;
+  opacity: 0.4;
+  outline: 0;
+  border-width: 0 0 2px;
+  position: relative;
+  left: 10%;
+  width: 200px;
+  height: 40px;
+  border-bottom: 3px solid #ee4c7c;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+
+.user-input-wrp .inputText {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid red;
+  box-shadow: none !important;
+}
+.user-input-wrp .input:focus {
+  outline-width: 0;
+}
+.user-input-wrp .floating-label {
+  color: white;
+  opacity: 0.4;
+  position: absolute;
+  pointer-events: none;
+  top: 37px;
+  left: 16%;
+  transition: 0.2s ease all;
+}
+.user-input-wrp input:focus ~ .floating-label,
+.user-input-wrp input:not(:placeholder-shown) ~ .floating-label {
+  top: 14px;
+  left: 13%;
+  font-size: 13px;
+  opacity: 0.8;
+}
+#label {
+  position: relative;
+  color: white;
+  opacity: 0.7;
+  left: 6.4%;
+  top: 19px;
+}
+textarea {
+  position: relative;
+  left: 5.6%;
+  top: 19px;
+  background-color: #330000;
+  border-radius: 5px;
+  border: 3px solid #ee4c7c;
+  font-size: 17px;
+  color: white;
+  opacity: 0.4;
+  outline: 0;
+}
+button {
+  position: relative;
+  top: 40px;
+  left: 5.6%;
+  width: 120px;
+  height: 40px;
+  background-color: #330000;
+  opacity: 0.4;
+  color: white;
+  border-radius: 10px;
+  border: 3px solid #ee4c7c;
+}
+button:hover {
+  transition: all 0.3s ease-out;
+  background: #fff;
+  color: #242424;
+  transition: 550ms;
+}
+.info {
+  position: relative;
+  left: 57%;
+  width: 120px;
+  bottom: 250px;
+  opacity: 0.7;
+  color: white;
+}
+p {
+  margin-bottom: 50px;
+  position: relative;
+}
+h1 {
+  margin-bottom: 40px;
+  color: white;
+  opacity: 0.8;
+}
+@media screen and (max-width: 1160px) {
+  textarea {
+    width: 450px;
+    height: 300px;
+  }
+  .info {
+    bottom: 290px;
+  }
+}
+@media screen and (max-width: 960px) {
+  h1 {
+    margin: auto;
+  }
+  .success-msg {
+    left: 53%;
+    transform: translateX(-50%);
+    top: 40px;
+  }
+  .fail-msg {
+    left: 53%;
+    transform: translateX(-50%);
+    top: 40px;
+  }
+  textarea {
+    width: 250px;
+    height: 300px;
+  }
+  form {
+    margin: auto;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.56);
+    border-right: 0px;
+    position: relative;
+    margin: auto;
+    padding-bottom: 60px;
+  }
+  .info {
+    padding-top: 20px;
+    position: static;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  .input {
+    left: 48%;
+    transform: translateX(-50%);
+  }
+  .feedback {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .user-input-wrp {
+    width: 100%;
+  }
+
+  button {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 960px) {
+  .user-input-wrp .floating-label {
+    left: 31%;
+  }
+  .user-input-wrp input:focus ~ .floating-label,
+  .user-input-wrp input:not(:placeholder-shown) ~ .floating-label {
+    top: 14px;
+    left: 31%;
+    font-size: 13px;
+    opacity: 0.8;
+  }
+}
+@media screen and (max-width: 840px) {
+  .user-input-wrp .floating-label {
+    left: 28%;
+  }
+  .user-input-wrp input:focus ~ .floating-label,
+  .user-input-wrp input:not(:placeholder-shown) ~ .floating-label {
+    top: 14px;
+    left: 28%;
+    font-size: 13px;
+    opacity: 0.8;
+  }
+}
+@media screen and (max-width: 650px) {
+  .user-input-wrp .floating-label {
+    left: 22%;
+  }
+  .user-input-wrp input:focus ~ .floating-label,
+  .user-input-wrp input:not(:placeholder-shown) ~ .floating-label {
+    top: 14px;
+    left: 22%;
+    font-size: 13px;
+    opacity: 0.8;
+  }
+}
